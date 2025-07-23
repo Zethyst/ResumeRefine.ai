@@ -65,11 +65,13 @@ export default function ResumeAnalyzer() {
   };
 
   if (analysisResult) {
-    <AnalysisReport
-      analysisResult={analysisResult}
-      setAnalysisResult={setAnalysisResult}
-      setSelectedFile={setSelectedFile}
-    />;
+    return (
+      <AnalysisReport
+        analysisResult={analysisResult}
+        setAnalysisResult={setAnalysisResult}
+        setSelectedFile={setSelectedFile}
+      />
+    );
   }
 
   return (
