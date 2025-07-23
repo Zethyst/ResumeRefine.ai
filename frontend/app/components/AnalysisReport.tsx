@@ -41,18 +41,18 @@ function AnalysisReport({
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-8 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             Resume Analysis Results
           </h1>
           <div className="flex items-center justify-center gap-4">
             <div
-              className={`px-6 py-3 rounded-full ${getScoreColor(
+              className={`text-xs md:text-base px-6 py-3 rounded-full ${getScoreColor(
                 analysisResult.overallScore
               )}`}
             >
               <div className="flex items-center gap-2">
                 {getScoreIcon(analysisResult.overallScore)}
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Overall Score: {analysisResult.overallScore}/100
                 </span>
               </div>
@@ -62,7 +62,7 @@ function AnalysisReport({
                 setAnalysisResult(null);
                 setSelectedFile(null);
               }}
-              className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
+              className="text-xs md:text-base px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
             >
               Analyze Another Resume
             </button>
