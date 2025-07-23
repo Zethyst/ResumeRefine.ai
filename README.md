@@ -23,6 +23,11 @@ A modern web application that analyzes PDF resumes using Google's Gemini AI and 
 - **Icons**: Lucide React
 - **Deployment**: Vercel-ready
 
+## 🖼️ Screenshots
+
+![home](/img/Home.png)
+![analyzedReport](/img/AnalysisReport.png)
+
 ## 📦 Installation
 
 1. **Clone the repository**
